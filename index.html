@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
 	<!--====== Style Font Awesome ======-->
-	<link rel="stylesheet" href="lib/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 	<!--====== Google Fonts ======-->
     <style>
@@ -29,7 +29,7 @@
 	<div class="tab-content d-block">
 
 		<!-- English Tab Start -->
-		<div class="tab-pane fade show active" id="en-pane" row="tabpanel">
+		<div class="tab-pane fade" id="en-pane" row="tabpanel">
 
 			<!-- Nav Bar Detail -->
 		    <header class="nav-header">
@@ -40,8 +40,8 @@
 
 		                <!-- Language Changes Button Group -->
 		                <div class="nav nav-tabs btn-group-lang" id="main-lan-tab" role="group" aria-label="Language Change">
-		                	<button class="nav-link active" data-toggle="tab" data-target="#en-pane">EN</button>	
-		                	<button class="nav-link" data-toggle="tab" data-target="#jp-pane">JP</button>	
+		                	<button class="nav-link" data-toggle="tab" data-target="#en-pane">EN</button>	
+		                	<button class="nav-link active" data-toggle="tab" data-target="#jp-pane">JP</button>	
 		                </div>
 
 		                <!-- Toggle Button For Smaller Screen -->
@@ -91,6 +91,7 @@
 									<a href="https://www.linkedin.com/in/%E3%83%BB%E3%83%86%E3%83%83%E3%83%BB%E3%83%81%E3%83%A7%E3%82%A6-%E3%82%AB%E3%82%A6%E3%83%B3-2a9028285/" target="_blank"><img src="assets\images\linkedin.svg"></i></a>
 									<a href="http://t.me/K_H_K8" target="_blank"><img src="assets/images/telegram.svg"></a>
 									<a href="https://line.me/ti/p/_ykILNpUnM" target="_blank"><img src="assets/images/line.svg"></a>
+									<a href="https://github.com/KaungHtetKyaw-8" target="_blank"><img src="assets/images/github.svg"></a>
 								</div>
 								<div class="card-header-btn">
 									<a class="btn" href="https://drive.google.com/uc?export=download&id=1YbCa24hGQ-0FNHgV25EIwyMcVCO1ouS8">Resume
@@ -127,151 +128,341 @@
 							</p>
 
 							<!-- Skill Progress Bar Detail -->
-							<div class="skill-list">
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">Java</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">90</span>%</p>
+							<div class="accordion" id="accordionSkill">
+								<div class="skill-list">
+									<!-- Java -->
+									<div class="card bg-transparent">
+										<div class="card-header" id="java">
+											<button class="btn btn-block text-left text-light border-0 p-0 " type="button" data-toggle="collapse" data-target="#javaCollapse">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Java</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+											</button>
 										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="90"></div>
-									</div>
-								</div>
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">Spring</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">60</span>%</p>
-										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="60"></div>
-									</div>
-								</div>
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">HTML/CSS</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">85</span>%</p>
-										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="85"></div>
-									</div>
-								</div>
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">JavaScript</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">60</span>%</p>
-										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="60"></div>
-									</div>
-								</div>
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">Bootstrap 4</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">80</span>%</p>
-										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="80"></div>
-									</div>
-								</div>
-								
-								<!-- Skill Progress Bar Collapse Detail -->
-								<div class="collapse" id="collapse-skill-en">
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Cobol</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">85</span>%</p>
+										<div id="javaCollapse" class="collapse show" aria-labelledby="javaCollapse" data-parent="#accordionSkill">
+											<div class="card-body p-2">
+										        <div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Spring Boot</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Spring Data JPA</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Spring Data JDBC</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Spring Web</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Sprring Thymeleaf</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">80</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="80"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">JavaFx</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">80</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="80"></div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="85"></div>
-										</div>
+									    </div>
 									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">VBA</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">85</span>%</p>
+									<!-- Web -->
+									<div class="card bg-transparent">
+										<div class="card-header" id="java">
+											<button class="btn btn-block text-left text-light border-0 p-0 " type="button" data-toggle="collapse" data-target="#webCollapse">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Web</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+											</button>
+										</div>
+										<div id="webCollapse" class="collapse" aria-labelledby="webCollapse" data-parent="#accordionSkill">
+											<div class="card-body p-2">
+										        <div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">HTML/CSS</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">JavaScript</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">75</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="75"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">JQuery</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">60</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="60"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Bootstrap 4</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Bootstrap 5</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">70</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="70"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">React</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">50</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="50"></div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="85"></div>
-										</div>
+									    </div>
 									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Microsoft Excel</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">90</span>%</p>
+									<!-- Microsoft -->
+									<div class="card bg-transparent">
+										<div class="card-header" id="java">
+											<button class="btn btn-block text-left text-light border-0 p-0 " type="button" data-toggle="collapse" data-target="#mcCollapse">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+											</button>
+										</div>
+										<div id="mcCollapse" class="collapse" aria-labelledby="mcCollapse" data-parent="#accordionSkill">
+											<div class="card-body p-2">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft Team</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+										        <div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft Excel</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft Word</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft Powerpoint</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="90"></div>
-										</div>
+									    </div>
 									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Microsoft Word</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">90</span>%</p>
+									<!-- Other -->
+									<div class="card bg-transparent">
+										<div class="card-header" id="java">
+											<button class="btn btn-block text-left text-light border-0 p-0 " type="button" data-toggle="collapse" data-target="#otherCollapse">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Other</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">75</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="75"></div>
+													</div>
+												</div>
+											</button>
+										</div>
+										<div id="otherCollapse" class="collapse" aria-labelledby="otherCollapse" data-parent="#accordionSkill">
+											<div class="card-body p-2">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">VBA</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Cobol</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Assembly</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Project Managemet</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">45</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="45"></div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="90"></div>
-										</div>
-									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Microsoft Powerpoint</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">90</span>%</p>
-											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="90"></div>
-										</div>
-									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Project Managemet</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">30</span>%</p>
-											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="30"></div>
-										</div>
+									    </div>
 									</div>
 								</div>
-
-								<!-- Collapse Toggle Button -->
-								<div class="text-center collapse-btn">
-									<span href="#collapse-skill-en" data-toggle="collapse" aria-expanded="false">
-										<i class="fa-solid fa-circle-chevron-up"></i>
-									</span>
-								</div>
-								
 							</div>
 						</div>
 
@@ -307,6 +498,65 @@
 								<div class="row align-items-center justify-content-center">
 									<div class="col-12 col-md-4 col-sm-6 mb-3">
 										<div class="card portfolio-card">
+											<img src="assets/images/mgt-coding.webp" alt="portfolio-image1">
+											<div class="card-body">
+												<h4>General Management System</h4>
+												<p>
+													Personal development
+												</p>
+											</div>
+											<!-- Modal button -->
+											<button class="btn btn-outline-info d-inline-block" type="button" data-toggle="modal" data-target="#en-mgt-web">
+												Show More
+											</button>
+
+											<!-- Modal -->
+											<div class="modal" id="en-mgt-web" data-backdrop="static" data-keyboard="false">
+												<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title">General Management System(Under Development)</h5>
+															<button type="button" class="close" data-dismiss="modal">
+																<span>&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<p>
+																A full-stack web application designed to manage core business data, including employees, customers, and products. Built with Java Spring Boot and modern frontend technologies, this system demonstrates practical CRUD operations, clean architecture, and responsive design.
+															</p>
+															<h4>🔹 Technologies Used:</h4>
+															<ul>
+																<li>Backend: Spring Boot, Spring MVC, Spring Web, Spring JDBC</li>
+																<li>Frontend: Thymeleaf, HTML, CSS, JavaScript, Bootstrap 5</li>
+															</ul>
+															<h4>🔹 Main Features:</h4>
+															<ul>
+																<li>Employee Management: Add, edit, view, and delete employee records</li>
+																
+
+																<li>Customer Management: Maintain and manage customer profiles</li>
+
+																<li>Product Management: Manage product inventory and details</li>
+
+																<li>Responsive UI: Mobile-friendly layout with Bootstrap 5</li>
+
+																<li>Clean Architecture: Follows MVC design pattern using Spring ecosystem</li>
+															</ul>
+															<p>
+																This project showcases my skills in developing maintainable, user-friendly business applications using Java and web technologies.
+															</p>															
+														</div>
+														<div class="modal-footer">
+															<a href="https://github.com/KaungHtetKyaw-8/General-Management-System" class="btn btn-secondary mx-2" target="_blank">Source Code</a>
+															<button class="close" data-dismiss="modal">Close</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-4 col-sm-6 mb-3">
+										<div class="card portfolio-card">
 											<img src="assets/images/bootstrap-coding.jpg" alt="portfolio-image1">
 											<div class="card-body">
 												<h4>Portfolio Site</h4>
@@ -335,6 +585,7 @@
 															</p>
 														</div>
 														<div class="modal-footer">
+															<a href="https://github.com/KaungHtetKyaw-8/Portfolio_Web" class="btn btn-secondary mx-2" target="_blank">Source Code</a>
 															<button class="close" data-dismiss="modal">Close</button>
 														</div>
 													</div>
@@ -342,7 +593,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-12 col-md-4 col-sm-6 mb-3">
+									<div class="col-12 col-md-4 col-sm-12 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/digital-coding.jpg" alt="portfolio-image1">
 											<div class="card-body">
@@ -379,7 +630,12 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-12 col-md-4 col-sm-12 mb-3">
+								</div>
+							</div> <!-- Carousel Itme End -->
+
+							<div class="carousel-item">
+								<div class="row align-items-center justify-content-center">
+									<div class="col-12 col-md-4 col-sm-6 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/product-coding.jpg" alt="portfolio-image1">
 											<div class="card-body">
@@ -416,10 +672,6 @@
 											</div>
 										</div>
 									</div>
-								</div>
-							</div> <!-- Carousel Itme End -->
-							<div class="carousel-item">
-								<div class="row align-items-center justify-content-center">
 									<div class="col-12 col-md-4 col-sm-6 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/reservation-coding.jpg" alt="portfolio-image1">
@@ -457,7 +709,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-12 col-md-4 col-sm-6 mb-3">
+									<div class="col-12 col-md-4 col-sm-12 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/server-coding.jpg" alt="portfolio-image1">
 											<div class="card-body">
@@ -494,6 +746,11 @@
 											</div>
 										</div>
 									</div>
+								</div>
+							</div> <!-- Carousel Itme End -->
+
+							<div class="carousel-item">
+								<div class="row align-items-center justify-content-center">
 									<div class="col-12 col-md-4 col-sm-6 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/java-coding.jpg" alt="portfolio-image1">
@@ -616,6 +873,7 @@
 						<a href="https://www.linkedin.com/in/%E3%83%BB%E3%83%86%E3%83%83%E3%83%BB%E3%83%81%E3%83%A7%E3%82%A6-%E3%82%AB%E3%82%A6%E3%83%B3-2a9028285/" target="_blank"><img src="assets\images\linkedin.svg"></i></a>
 						<a href="http://t.me/K_H_K8" target="_blank"><img src="assets/images/telegram.svg"></a>
 						<a href="https://line.me/ti/p/_ykILNpUnM" target="_blank"><img src="assets/images/line.svg"></a>
+						<a href="https://github.com/KaungHtetKyaw-8" target="_blank"><img src="assets/images/github.svg"></a>
 					</div>
 
 					<div class="col">
@@ -656,7 +914,7 @@
 
 
 		<!-- Japanese Pane Start -->
-		<div class="tab-pane fade" id="jp-pane" row="tabpanel">
+		<div class="tab-pane fade show active" id="jp-pane" row="tabpanel">
 			<!--====== HEADER PART START ======-->
 			<!-- Nav Bar Detail -->
 		    <header class="nav-header">
@@ -715,6 +973,7 @@
 									<a href="https://www.linkedin.com/in/%E3%83%BB%E3%83%86%E3%83%83%E3%83%BB%E3%83%81%E3%83%A7%E3%82%A6-%E3%82%AB%E3%82%A6%E3%83%B3-2a9028285/" target="_blank"><img src="assets\images\linkedin.svg"></i></a>
 									<a href="http://t.me/K_H_K8" target="_blank"><img src="assets/images/telegram.svg"></a>
 									<a href="https://line.me/ti/p/_ykILNpUnM" target="_blank"><img src="assets/images/line.svg"></a>
+									<a href="https://github.com/KaungHtetKyaw-8" target="_blank"><img src="assets/images/github.svg"></a>
 								</div>
 								<div class="card-header-btn">
 									<a class="btn" href="https://drive.google.com/uc?export=download&id=1wLI3_LW1CQ25tLnl3MYjf-swrCf_2QN8">履歴書
@@ -749,152 +1008,345 @@
 								2年間のバックエンドおよびフロントエンド開発経験があり、特に金融業界や株式取引分野でCOBOLを使用して、詳細設計から運用まで幅広く携わってきました。また、Excel VBAを活用して業務プロセスの効率化と自動化を進め、デジタルトランスフォーメーション（DX）にも貢献しました。バックエンド開発に強みを持ちながら、フロントエンド開発にも一定の経験があります。複雑な問題を解決することに情熱を持ち、Springなどの最新技術を含め、常にスキルを向上させています。
 								<br><br>
 								私は新しい技術やツールを素早く学び、挑戦に迅速に適応できる「速習者」です。バックエンドおよびフロントエンド開発の経験、開発ライフサイクル全体の関与、そして学習能力を活かして、どのチームにも貢献できると確信しています。
+								
 							</p>
-							<div class="skill-list">
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">Java</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">90</span>%</p>
+							<!-- Skill Progress Bar Detail -->
+							<span>※詳細はプログレスバーをクリックしてください</span>
+							<div class="accordion" id="accordionSkillJp">
+								<div class="skill-list">
+									<!-- Java -->
+									<div class="card bg-transparent">
+										<div class="card-header" id="java">
+											<button class="btn btn-block text-left text-light border-0 p-0 " type="button" data-toggle="collapse" data-target="#javaCollapseJp">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Java</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+											</button>
 										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="90"></div>
-									</div>
-								</div>
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">Spring</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">60</span>%</p>
-										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="60"></div>
-									</div>
-								</div>
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">HTML/CSS</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">85</span>%</p>
-										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="85"></div>
-									</div>
-								</div>
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">JavaScript</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">60</span>%</p>
-										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="60"></div>
-									</div>
-								</div>
-								<div class="skill-item">
-									<div class="skill-header">
-										<h6 class="skill-title">Bootstrap 4</h6>
-										<div class="skill-percentage">
-											<p><span class="counter">80</span>%</p>
-										</div>
-									</div>
-									<div class="skill-bar">
-										<div class="inner-bar"></div>
-										<div class="progress-line" data-width="80"></div>
-									</div>
-								</div>
-								
-								<!-- Skill Progress Bar Collapse Detail -->
-								<div class="collapse" id="collapse-skill-jp">
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Cobol</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">85</span>%</p>
+										<div id="javaCollapseJp" class="collapse" aria-labelledby="javaCollapseJp" data-parent="#accordionSkillJp">
+											<div class="card-body p-2">
+										        <div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Spring Boot</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Spring Data JPA</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Spring Data JDBC</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Spring Web</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Sprring Thymeleaf</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">80</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="80"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">JavaFx</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">80</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="80"></div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="85"></div>
-										</div>
+									    </div>
 									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">VBA</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">85</span>%</p>
+									<!-- Web -->
+									<div class="card bg-transparent">
+										<div class="card-header" id="web">
+											<button class="btn btn-block text-left text-light border-0 p-0 " type="button" data-toggle="collapse" data-target="#webCollapseJp">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Web</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+											</button>
+										</div>
+										<div id="webCollapseJp" class="collapse" aria-labelledby="webCollapseJp" data-parent="#accordionSkillJp">
+											<div class="card-body p-2">
+										        <div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">HTML/CSS</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">JavaScript</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">75</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="75"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">JQuery</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">60</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="60"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Bootstrap 4</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Bootstrap 5</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">70</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="70"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">React</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">50</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="50"></div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="85"></div>
-										</div>
+									    </div>
 									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Microsoft Excel</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">90</span>%</p>
+									<!-- Microsoft -->
+									<div class="card bg-transparent">
+										<div class="card-header" id="mc">
+											<button class="btn btn-block text-left text-light border-0 p-0 " type="button" data-toggle="collapse" data-target="#mcCollapseJp">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+											</button>
+										</div>
+										<div id="mcCollapseJp" class="collapse" aria-labelledby="mcCollapseJp" data-parent="#accordionSkillJp">
+											<div class="card-body p-2">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft Team</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+										        <div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft Excel</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft Word</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Microsoft Powerpoint</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="90"></div>
-										</div>
+									    </div>
 									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Microsoft Word</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">90</span>%</p>
+									<!-- Other -->
+									<div class="card bg-transparent">
+										<div class="card-header" id="java">
+											<button class="btn btn-block text-left text-light border-0 p-0 " type="button" data-toggle="collapse" data-target="#otherCollapseJp">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Other</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">75</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="75"></div>
+													</div>
+												</div>
+											</button>
+										</div>
+										<div id="otherCollapseJp" class="collapse" aria-labelledby="otherCollapseJp" data-parent="#accordionSkillJp">
+											<div class="card-body p-2">
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">VBA</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Cobol</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">90</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="90"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Assembly</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">85</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="85"></div>
+													</div>
+												</div>
+												<div class="skill-item">
+													<div class="skill-header">
+														<h6 class="skill-title">Project Managemet</h6>
+														<div class="skill-percentage">
+															<p><span class="counter">45</span>%</p>
+														</div>
+													</div>
+													<div class="skill-bar">
+														<div class="inner-bar"></div>
+														<div class="progress-line" data-width="45"></div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="90"></div>
-										</div>
-									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Microsoft Powerpoint</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">90</span>%</p>
-											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="90"></div>
-										</div>
-									</div>
-									<div class="skill-item">
-										<div class="skill-header">
-											<h6 class="skill-title">Project Managemet</h6>
-											<div class="skill-percentage">
-												<p><span class="counter">30</span>%</p>
-											</div>
-										</div>
-										<div class="skill-bar">
-											<div class="inner-bar"></div>
-											<div class="progress-line" data-width="30"></div>
-										</div>
+									    </div>
 									</div>
 								</div>
-
-								<!-- Collapse Toggle Button -->
-								<div class="text-center collapse-btn">
-									<span href="#collapse-skill-jp" data-toggle="collapse" aria-expanded="false">
-										<i class="fa-solid fa-circle-chevron-up"></i>
-									</span>
-								</div>
-								
 							</div>
 						</div>
 						<div class="col-12 col-md-4">
@@ -926,6 +1378,65 @@
 								<div class="row align-items-center justify-content-center">
 									<div class="col-12 col-md-4 col-sm-6 mb-3">
 										<div class="card portfolio-card">
+											<img src="assets/images/mgt-coding.webp" alt="portfolio-image1">
+											<div class="card-body">
+												<h4>総合管理システム</h4>
+												<p>
+													個人ウェブ開発
+												</p>
+											</div>
+											<!-- Modal button -->
+											<button class="btn btn-outline-info d-inline-block" type="button" data-toggle="modal" data-target="#jp-mgt-web">
+												もっと見る
+											</button>
+
+											<!-- Modal -->
+											<div class="modal" id="jp-mgt-web" data-backdrop="static" data-keyboard="false">
+												<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title">総合管理システム(開発中)</h5>
+															<button type="button" class="close" data-dismiss="modal">
+																<span>&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<p>
+																従業員・顧客・商品といった業務データを一元管理するための、フルスタックWebアプリケーションです。JavaのSpring Bootフレームワークとモダンなフロントエンド技術を用いて開発しており、実用的なCRUD操作や、保守性の高い構造、レスポンシブデザインを実現しています。
+															</p>
+															<h4>🔹 使用技術:</h4>
+															<ul>
+																<li>バックエンド: Spring Boot, Spring MVC, Spring Web, Spring JDBC</li>
+																<li>フロントエンド: Thymeleaf, HTML, CSS, JavaScript, Bootstrap 5</li>
+															</ul>
+															<h4>🔹 主な機能:</h4>
+															<ul>
+																<li>従業員管理: 従業員の登録・編集・表示・削除</li>
+																
+
+																<li>顧客管理: 顧客情報の管理と検索機能</li>
+
+																<li>商品管理: 商品情報の追加・更新・在庫管理</li>
+
+																<li>レスポンシブUI: Bootstrap 5によるモバイル対応デザイン</li>
+
+																<li>クリーンアーキテクチャ: Springを活用したMVC設計パターンに準拠</li>
+															</ul>
+															<p>
+																本システムを通じて、JavaとWeb技術を活用した、実用的かつ保守性のある業務アプリケーションの開発スキルを示しています。
+															</p>															
+														</div>
+														<div class="modal-footer">
+															<a href="https://github.com/KaungHtetKyaw-8/General-Management-System" class="btn btn-secondary mx-2" target="_blank">ソースコード</a>
+															<button class="close" data-dismiss="modal">閉じる</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-4 col-sm-6 mb-3">
+										<div class="card portfolio-card">
 											<img src="assets/images/bootstrap-coding.jpg" alt="portfolio-image1">
 											<div class="card-body">
 												<h4>ポートフォリオサイト</h4>
@@ -954,6 +1465,7 @@
 															</p>
 														</div>
 														<div class="modal-footer">
+															<a href="https://github.com/KaungHtetKyaw-8/Portfolio_Web" class="btn btn-secondary mx-2" target="_blank">ソースコード</a>
 															<button class="close" data-dismiss="modal">閉じる</button>
 														</div>
 													</div>
@@ -961,7 +1473,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-12 col-md-4 col-sm-6 mb-3">
+									<div class="col-12 col-md-4 col-sm-12 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/digital-coding.jpg" alt="portfolio-image1">
 											<div class="card-body">
@@ -998,7 +1510,12 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-12 col-md-4 col-sm-12 mb-3">
+									
+								</div>
+							</div> <!-- Carousel Itme End -->
+							<div class="carousel-item">
+								<div class="row align-items-center justify-content-center">
+									<div class="col-12 col-md-4 col-sm-6 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/product-coding.jpg" alt="portfolio-image1">
 											<div class="card-body">
@@ -1035,10 +1552,6 @@
 											</div>
 										</div>
 									</div>
-								</div>
-							</div> <!-- Carousel Itme End -->
-							<div class="carousel-item">
-								<div class="row align-items-center justify-content-center">
 									<div class="col-12 col-md-4 col-sm-6 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/reservation-coding.jpg" alt="portfolio-image1">
@@ -1076,7 +1589,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-12 col-md-4 col-sm-6 mb-3">
+									<div class="col-12 col-md-4 col-sm-12 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/server-coding.jpg" alt="portfolio-image1">
 											<div class="card-body">
@@ -1113,6 +1626,11 @@
 											</div>
 										</div>
 									</div>
+								</div>
+							</div> <!-- Carousel Itme End -->
+							<div class="carousel-item">
+								<div class="row align-items-center justify-content-center">
+									
 									<div class="col-12 col-md-4 col-sm-12 mb-3">
 										<div class="card portfolio-card">
 											<img src="assets/images/java-coding.jpg" alt="portfolio-image1">
@@ -1234,6 +1752,7 @@
 						<a href="https://www.linkedin.com/in/%E3%83%BB%E3%83%86%E3%83%83%E3%83%BB%E3%83%81%E3%83%A7%E3%82%A6-%E3%82%AB%E3%82%A6%E3%83%B3-2a9028285/" target="_blank"><img src="assets\images\linkedin.svg"></i></a>
 						<a href="http://t.me/K_H_K8" target="_blank"><img src="assets/images/telegram.svg"></a>
 						<a href="https://line.me/ti/p/_ykILNpUnM" target="_blank"><img src="assets/images/line.svg"></a>
+						<a href="https://github.com/KaungHtetKyaw-8" target="_blank"><img src="assets/images/github.svg"></a>
 					</div>
 
 					<div class="col">

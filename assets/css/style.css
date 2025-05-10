@@ -298,6 +298,10 @@ section {
   margin-top: 16px;
 }
 
+.skill-list .btn {
+  box-shadow: none;
+}
+
 .skill-item {
   background-color: #28374F;
   border-radius: 0px 8px 0px 8px;
